@@ -108,30 +108,54 @@ body {
 
   p {
     text-align: center;
+    margin-top: 33px;
   }
   p.sign-up {
     position: fixed;
-    bottom: 0;
+    bottom: 33px;
     left: 50%;
     transform: translate(-50%, 0);
   }
 
+  img {
+    position: fixed;
+  }
   .star {
     width: 73px;
+    top: 27px;
+    left: 27px;
   }
   .ray {
     width: 60px;
+    top: 33px;
+    right: 33px;
   }
-  .b-40 {
+  .b-40-logo {
     width: 130px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .b-40-logo.left {
+    left: 33px;
+  }
+  .b-40-logo.right {
+    right: 33px;
   }
   .ram {
     width: 160px;
+    bottom: 33px;
+    left: 33px;
   }
   .wolf {
     width: 137px;
+    bottom: 33px;
+    right: 33px;
   }
   .b40.center {
     width: 330px;
+    position: fixed; /* or absolute */
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
