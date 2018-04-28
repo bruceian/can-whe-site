@@ -1,7 +1,12 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@font-face {
+  font-family: 'BreiteGrotesk-Regular';
+  src: url('fonts/BreiteGrotesk-Regular.woff') format('woff');
+  src: url('fonts/BreiteGrotesk-Regular.ttf') format('truetype');
+  src: url('fonts/BreiteGrotesk-Regular.otf') format('otf');
+}
 // NULL CSS BEGIN
 
 html, body, div, span, object, iframe,
@@ -110,6 +115,9 @@ body {
     display: none;
   }
   p {
+    line-height: 18px;
+    font-size: 12px;
+    font-family: "BreiteGrotesk-Regular", sans-serif;
     text-align: center;
     position: fixed;
     transform: translate(-50%, 0);
@@ -118,6 +126,11 @@ body {
   }
   p.top {
     top: 33px;
+
+    span:after {
+        content:"\00a0\00a0\00a0\00a0";
+        text-decoration:line-through;
+    }
   }
   p.sign-up {
     bottom: 33px;
@@ -207,6 +220,7 @@ body {
       width: 280px;
     }
     .ram {
+      width: 140px;
       bottom: 4%;
       left: 50%;
       transform: translate(-50%, -50%);
