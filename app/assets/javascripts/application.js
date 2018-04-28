@@ -17,8 +17,8 @@
 
 $(function() {
 
-  $('h2').click(function(event){
+  $('h1').click(function(event){
     console.log('You clicked the Hide link');
   });
-  
+
 });
