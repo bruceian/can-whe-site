@@ -163,7 +163,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
+  @media screen and (min-width: 731px) {
+    .hidden-md {
+      display: none;
+    }
+  }
   @media screen and (max-width: 730px) {
     .hidden-xs {
       display: none;
@@ -171,12 +175,12 @@ body {
     .b-40-logo.right {
       right: 0;
       width: 138px;
-      top: 107px;
+      top: 80px;
       left: 50%;
       transform: translate(-50%, 0%);
     }
     .b40.center {
-      top: 50%;
+      top: 47%;
       width: 313px;
     }
     .ram {
