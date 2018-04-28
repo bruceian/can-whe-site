@@ -176,7 +176,7 @@ body {
     position: fixed; /* or absolute */
     top: 52%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-52%, -50%);
 
     -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 2.5s; /* Firefox < 16 */
@@ -229,6 +229,7 @@ body {
     .b40.center {
       top: 47%;
       width: 42.8vh;
+      transform: translate(-50%, -50%);
     }
     .ram {
       width: 23.7vh;
@@ -269,6 +270,128 @@ body {
   @-webkit-keyframes fadein {
       from { opacity: 0; }
       to   { opacity: 1; }
+  }
+
+  svg.twinkle {
+    position: fixed; /* or absolute */
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 730px) {
+      transform: translate(-44%, -50%);
+    }
+
+  	// position: absolute;
+  	// -webkit-transform: translate(102%, 350%);
+  	// transform: translate(102%, 350%);
+
+  .group {
+      -webkit-transform: translate(42.5px,42.5px);
+      -moz-transform: translate(42.5px,42.5px);
+      transform: translate(42.5px, 42.5px);
+  }
+  path {
+      -webkit-transform: translate(-42.50px,-42.50px);
+      -moz-transform: translate(-42.50px,-42.50px);
+      transform: translate(-42.50px,-42.50px);
+  }
+  .large {
+  	-webkit-animation: large 2.5s infinite;
+  	-moz-animation: large 2.5s infinite;
+  }
+  .large-2 {
+  	-webkit-animation: large-2 2.5s infinite;
+  	-moz-animation: large-2 2.5s infinite;
+  }
+  .small {
+  	-webkit-animation: small 2.5s infinite;
+  	-moz-animation: small 2.5s infinite;
+  }
+  @-webkit-keyframes large {
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: rotate(0deg) scale(0);
+  		transform: rotate(0deg) scale(0);
+  	}
+  	50% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  		-webkit-transform: rotate(360deg) scale(1.5);
+  		transform: rotate(360deg) scale(1.5);
+  	}
+  }
+  @-moz-keyframes large {
+  	0% {
+  		opacity: 0;
+  		transform: rotate(0deg) scale(0);
+  	}
+  	50% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  		transform: rotate(360deg) scale(1.5);
+  	}
+  }
+  @-webkit-keyframes large-2 {
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: rotate(45deg) scale(0);
+  		transform: rotate(45deg) scale(0);
+  	}
+  	50% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  		-webkit-transform: rotate(405deg) scale(1.1);
+  		transform: rotate(405deg) scale(1.1);
+  	}
+  }
+  @-moz-keyframes large-2 {
+  	0% {
+  		opacity: 0;
+  		transform: rotate(45deg) scale(0);
+  	}
+  	50% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  		transform: rotate(405deg) scale(1.1);
+  	}
+  }
+  @-webkit-keyframes small {
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: rotate(0deg) scale(0);
+  		transform: rotate(0deg) scale(0);
+  	}
+  	50% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  		-webkit-transform: rotate(-360deg) scale(1);
+  		transform: rotate(-360deg) scale(1.5);
+  	}
+  }
+  @-moz-keyframes small {
+  	0% {
+  		opacity: 0;
+  		transform: rotate(0deg) scale(0);
+  	}
+  	50% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  		transform: rotate(-360deg) scale(1.5);
+  	}
+  }
   }
 }
 // body tag end
