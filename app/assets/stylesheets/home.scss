@@ -115,7 +115,6 @@ body {
     display: none;
   }
   p {
-    line-height: 18px;
     font-size: 12px;
     font-family: "BreiteGrotesk-Regular", sans-serif;
     text-align: center;
@@ -211,23 +210,29 @@ body {
     }
   }
   @media screen and (max-width: 730px) {
+    p.top {
+      top: 4.6vh;
+    }
+    p.sign-up {
+      bottom: 4.6vh;
+    }
     .hidden-xs {
       display: none;
     }
     .b-40-logo.right {
       right: 0;
-      width: 120px;
-      top: 14%;
+      width: 18.75vh;
+      top: 14.5vh;
       left: 49%;
       transform: translate(-50%, 0%);
     }
     .b40.center {
       top: 47%;
-      width: 315px;
+      width: 42.8vh;
     }
     .ram {
-      width: 140px;
-      bottom: 4%;
+      width: 26.7vh;
+      bottom: 1.2vh;
       left: 50%;
       transform: translate(-50%, -50%);
     }
