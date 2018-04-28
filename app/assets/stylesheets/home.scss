@@ -111,17 +111,20 @@ body {
   }
   p {
     text-align: center;
-    margin-top: 33px;
-  }
-  p.sign-up {
     position: fixed;
-    bottom: 33px;
-    left: 50%;
     transform: translate(-50%, 0);
     width: 100%;
-    margin-top: 0;
+    left: 50%;
   }
-
+  p.top {
+    top: 33px;
+  }
+  p.sign-up {
+    bottom: 33px;
+  }
+  p.sign-up:hover {
+    cursor: pointer;
+  }
   img {
     position: fixed;
   }
@@ -163,6 +166,26 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  @media screen and (min-width: 1440px) {
+    .star {
+      width: 7%;
+    }
+    .ray {
+      width: 6%;
+    }
+    .b-40-logo {
+      width: 11%;
+    }
+    .ram {
+      width: 12%;
+    }
+    .wolf {
+      width: 10%;
+    }
+    .b40.center {
+      width: 32%;
+    }
+  }
   @media screen and (min-width: 731px) {
     .hidden-md {
       display: none;
@@ -174,7 +197,7 @@ body {
     }
     .b-40-logo.right {
       right: 0;
-      width: 138px;
+      width: 120px;
       top: 14%;
       left: 50%;
       transform: translate(-50%, 0%);
@@ -194,7 +217,7 @@ body {
       display: none;
     }
     .b-40-logo.right {
-      width: 110px;
+      width: 100px;
       top: 85px;
     }
     .b40.center {
