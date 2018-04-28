@@ -11,5 +11,14 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+
+  $('h2').click(function(event){
+    console.log('You clicked the Hide link');
+  });
+  
+});
