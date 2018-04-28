@@ -297,16 +297,16 @@ body {
       transform: translate(-42.50px,-42.50px);
   }
   .large {
-  	-webkit-animation: large 2.5s infinite;
-  	-moz-animation: large 2.5s infinite;
+  	-webkit-animation: large 2.5s forwards;
+  	-moz-animation: large 2.5s forwards;
   }
   .large-2 {
-  	-webkit-animation: large-2 2.5s infinite;
-  	-moz-animation: large-2 2.5s infinite;
+  	-webkit-animation: large-2 2.5s forwards;
+  	-moz-animation: large-2 2.5s forwards;
   }
   .small {
-  	-webkit-animation: small 2.5s infinite;
-  	-moz-animation: small 2.5s infinite;
+  	-webkit-animation: small 2.5s forwards;
+  	-moz-animation: small 2.5s forwards;
   }
   @-webkit-keyframes large {
   	0% {
