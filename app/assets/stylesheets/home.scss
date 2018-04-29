@@ -108,6 +108,7 @@ input, select {
 // NULL CSS END
 
 body {
+  transition: 0.2s;
   background-color: #1a2a3f;
   color: #efebe5;
 
@@ -115,12 +116,12 @@ body {
     display: none;
   }
   p {
+    width: 100%;
     font-size: 14px;
     font-family: "BreiteGrotesk-Regular", sans-serif;
     text-align: center;
     position: fixed;
     transform: translate(-50%, 0);
-    width: 100%;
     left: 50%;
   }
   p.top {
@@ -133,9 +134,22 @@ body {
   }
   p.sign-up {
     bottom: 33px;
+    
+    span {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      -o-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+
+    }
   }
-  p.sign-up:hover {
+  p.sign-up span:hover {
     cursor: pointer;
+    color: #efebe5;
+    border-bottom: 1px solid #efebe5;
   }
   img {
     position: fixed;
@@ -253,6 +267,10 @@ body {
       bottom: 8%;
       width: 110px;
     }
+  }
+  @keyframes drawline {
+    from { width: 0; }
+    to   { width: 100%; }
   }
 
   @keyframes fadein {

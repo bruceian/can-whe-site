@@ -17,4 +17,17 @@
 
 $(function() {
 
+  $('#input-form').one('submit', function(e){
+    var inputq1 = encodeURIComponent($('#post_email').val());
+    var q1ID = "entry.1071338004"
+
+    var baseURL = "https://docs.google.com/forms/d/e/1FAIpQLScBKiY7ahI2ll2gzw8DrQHh52jn9bPXXhAUKzrEcuZaDIQZ-A/formResponse?";
+    var submitRef = "&submit=2067469646452175571"
+    var submitURL = (baseURL + q1ID + "=" + inputq1 + submitRef);
+    console.log(submitURL);
+    $(this)[0].action = submitURL;
+    window.location = "/";
+  });
+
+
 });
