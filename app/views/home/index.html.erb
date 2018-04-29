@@ -4,6 +4,7 @@
 <h1>Back Forty Cannabis Only the Highest Quality Naturally Grown</h1>
 <h2>Only the highest quality naturally grown</h2>
 <p class="top">Coming Soon <span></span> Summer 2018</p>
+<p id="input-feedback"></p>
 <p class="sign-up"><span>Sign Up for News and Updates</span></p>
 <%= image_tag("star.svg", alt: "star", class: "star hidden-xs")%>
 <%= image_tag("ray.svg", alt: "ray in arch way", class: "ray hidden-xs")%>
@@ -28,10 +29,14 @@
     </g>
   </g>
 </svg> -->
+<div id="overlay" class="not-active"></div>
 
-<form id="input-form" action="" method="POST" target="no-target">
-  <input type="text" id="post_email" placeholder="Enter Email">
-  <input id="form-submit" type="submit">
-</form>
+<div class="pop-up not-active">
+  <h4 class="close">X</h4>
+  <form id="input-form" action="" method="POST" target="no-target">
+    <input type="text" id="post_email" placeholder="Enter Email">
+    <input id="form-submit" type="submit">
+  </form>
+</div>
 
 <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>

@@ -26,8 +26,20 @@ $(function() {
     var submitURL = (baseURL + q1ID + "=" + inputq1 + submitRef);
     console.log(submitURL);
     $(this)[0].action = submitURL;
-    window.location = "/";
+    $('#overlay').fadeOut(200);
+    $('.pop-up').fadeOut(200);
+    $('#input-feedback').text('Thanks!');
   });
 
+  $("p.sign-up").click(function () {
+      $('#overlay').fadeIn(400);
+      $('.pop-up').fadeIn(400);
+
+    });
+
+  $(".close").click(function () {
+    $('#overlay').fadeOut(200);
+    $('.pop-up').fadeOut(200);
+  });
 
 });
