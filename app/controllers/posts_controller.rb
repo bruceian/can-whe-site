@@ -9,10 +9,10 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = Post.find_or_create_by(post_params)
     @post.save
 
-    redirect_to new_post_url
+    redirect_to root_path
   end
 
   private
