@@ -108,6 +108,14 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+input {
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+:-webkit-autofill {
+  color: #fff !important;
+}
 // NULL CSS END
 
 body {
@@ -453,7 +461,7 @@ body {
     max-width: 283px;
     max-height: 432px;
 
-    h1 {
+    h6 {
       margin: auto auto 120px auto;
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: 300;
@@ -476,6 +484,7 @@ body {
       background-color: transparent;
     }
     #form-submit {
+      -webkit-appearance: none;
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: 300;
       font-size: 12px;
