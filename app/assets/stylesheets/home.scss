@@ -201,7 +201,7 @@ body {
     position: fixed; /* or absolute */
     top: 52%;
     left: 50%;
-    transform: translate(-52%, -50%);
+    transform: translate(-50%, -50%);
 
     -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 2.5s; /* Firefox < 16 */

@@ -27,7 +27,7 @@ $( "#post_email" ).keypress(function() {
 
         if (!ValidateEmail($("#post_email").val())) {
           e.preventDefault();
-          $('#input-msg').text("Please Enter Valid Email");
+          $('#input-msg').html("Please Enter<br/><strong>Valid</strong> Email Address");
           $( "#post_email" ).val("");
         }
         else {
@@ -39,8 +39,8 @@ $( "#post_email" ).keypress(function() {
           var submitRef = "&submit=2067469646452175571"
           var submitURL = (baseURL + q1ID + "=" + inputq1 + submitRef);
           $(this)[0].action = submitURL;
-          $('#input-msg').fadeOut();
-          $('#input-form').fadeOut();
+          $('#input-msg').fadeOut(100);
+          $('#input-form').fadeOut(100);
         }
 
     });
@@ -49,7 +49,6 @@ $( "#post_email" ).keypress(function() {
   $("p.sign-up").click(function () {
       $('#overlay').fadeIn(400);
       $('.pop-up').fadeIn(400);
-
     });
 
   $(".close").click(function () {
