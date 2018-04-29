@@ -47,6 +47,9 @@ blockquote, q {
     quotes:none;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
 blockquote:before, blockquote:after,
 q:before, q:after {
     content:'';
@@ -426,10 +429,10 @@ body {
       cursor: pointer; /* Add a pointer on hover */
   }
   .close {
+    width: 13px;
     cursor: pointer;
-    display: inline-block;
-    float: right;
     color: black;
+    margin: 23px auto 15px auto;
   }
   .not-active {
     display: none;
@@ -447,8 +450,43 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 283px;
+    max-height: 432px;
+
+    h1 {
+      margin: auto auto 120px auto;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      display: block;
+      color: #010101;
+      width: 104px;
+      text-align: center;
+    }
+    #post_email {
+      text-align: center;
+      width: 240px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #000000;
+      margin: auto auto 176px auto;
+      display: block;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      background-color: transparent;
+    }
+    #form-submit {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      background-color: white;
+      text-transform: uppercase;
+      border: 0 none;
+      cursor: pointer;
+      -webkit-border-radius: 5px;
+      display: block;
+      margin: auto;
+    }
   }
 }
 // body tag end
