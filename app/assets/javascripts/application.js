@@ -52,6 +52,7 @@ $( "#post_email" ).keypress(function() {
     });
 
   $(".close").click(function () {
+    $( "#post_email" ).val("");
     $('#overlay').fadeOut(200);
     $('.pop-up').fadeOut(200);
   });
