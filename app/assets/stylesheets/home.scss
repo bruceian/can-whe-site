@@ -273,7 +273,6 @@ body {
     }
     .b-40-logo.right {
       width: 100px;
-      top: 85px;
     }
     .b40.center {
       width: 230px;
@@ -314,7 +313,7 @@ body {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+      background-color: rgba(0,0,0,0.4); /* Black background with opacity */
       z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
       cursor: pointer; /* Add a pointer on hover */
   }
@@ -344,15 +343,16 @@ body {
     max-height: 432px;
 
     h6 {
+      font-weight: 500;
       margin: auto auto 120px auto;
-      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-      font-weight: 300;
+      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
       font-size: 14px;
       display: block;
       color: #010101;
       text-align: center;
     }
     #post_email {
+      font-weight: 500;
       border-radius: 0;
       text-align: center;
       width: 240px;
@@ -362,14 +362,13 @@ body {
       margin: auto auto 167px auto;
       display: block;
       font-size: 14px;
-      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-      font-weight: 300;
+      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
       background-color: transparent;
     }
     #form-submit {
+      font-weight: 500;
       -webkit-appearance: none;
-      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-      font-weight: 300;
+      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
       font-size: 14px;
       background-color: white;
       text-transform: uppercase;
@@ -380,6 +379,7 @@ body {
       margin: auto;
     }
     #input-feedback {
+      font-weight: 500;
       position: fixed; /* or absolute */
       top: 50%;
       left: 50%;
