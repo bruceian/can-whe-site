@@ -17,35 +17,52 @@
 
 $(function() {
 
-  function ValidateEmail(email) {
-        var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        return expr.test(email);
-    };
+    // Send Form to Google Sheet
+    $('#input-form #form-submit').click(function(event){
 
-$( "#post_email" ).keypress(function() {
-    $('#input-form').one('submit', function(e){
+      var inputq1 = encodeURIComponent($('#post_email').val());
+      var inputq2 = encodeURIComponent($('#post_first_name').val());
+      var inputq3 = encodeURIComponent($('#post_last_name').val());
+      var inputq4 = encodeURIComponent($('#post_age').val());
+      var q1ID = "entry.1071338004"
+      var q2ID = "entry.1151944256"
+      var q3ID = "entry.1324870118"
+      var q4ID = "entry.253641071"
 
-        if (!ValidateEmail($("#post_email").val())) {
-          e.preventDefault();
-          $('#input-msg').html("Please Enter<br/><strong>Valid</strong> Email Address");
-          $( "#post_email" ).val("");
-        }
-        else {
+      var baseURL = "https://docs.google.com/forms/d/e/1FAIpQLScBKiY7ahI2ll2gzw8DrQHh52jn9bPXXhAUKzrEcuZaDIQZ-A/formResponse?";
+      var submitRef = "&submit=1111395812031556201"
+      var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + submitRef);
+      $('#input-form')[0].action = submitURL;
+
+       //Check If Input Blank
+        if ( inputq1 == '' || inputq2 == '' || inputq3 == '' || inputq4 == '') {
+          event.preventDefault();
+          $('#input-msg').text('Fields cannot be blank');
+        } else if ($('#post_email').hasClass('invalid')) {
+          event.preventDefault();
+          $('#input-msg').text('Please provide valid email');
+        } else {
           $('#input-feedback').text('Thanks!');
-          var inputq1 = encodeURIComponent($('#post_email').val());
-          var q1ID = "entry.1071338004"
-
-          var baseURL = "https://docs.google.com/forms/d/e/1FAIpQLScBKiY7ahI2ll2gzw8DrQHh52jn9bPXXhAUKzrEcuZaDIQZ-A/formResponse?";
-          var submitRef = "&submit=2067469646452175571"
-          var submitURL = (baseURL + q1ID + "=" + inputq1 + submitRef);
-          $(this)[0].action = submitURL;
           $('#input-msg').fadeOut(100);
           $('#input-form').fadeOut(100);
         }
 
     });
-  });
 
+    // Check If Email Valid
+    $('#post_email').on('input', function() {
+      var input = $(this);
+      var re = /^([A-Za-z0-9_\-\.])+\@(?!(?:[A-Za-z0-9_\-\.]+\.)?([A-Za-z]{2,4})\.\2)([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+      var is_email = re.test(input.val());
+
+      if(is_email) {
+        $(this).removeClass('invalid');
+      } else {
+        $(this).addClass('invalid');
+      }
+    });
+
+// Open and Close Pop-Up
   $("p.sign-up").click(function () {
       $('#overlay').fadeIn(400);
       $('.pop-up').fadeIn(400);

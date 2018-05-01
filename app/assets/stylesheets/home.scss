@@ -94,6 +94,11 @@ table {
     border-collapse:collapse;
     border-spacing:0;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* change border colour to suit your needs */
 hr {
@@ -339,44 +344,53 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    max-width: 283px;
-    max-height: 432px;
+    max-width: 338px;
+    max-height: 515px;
 
     h6 {
-      font-weight: 500;
-      margin: auto auto 120px auto;
-      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-      font-size: 14px;
+      margin: auto auto 100px auto;
+      font-family: "BreiteGrotesk-Regular", sans-serif;
+      font-size: 12px;
       display: block;
       color: #010101;
       text-align: center;
     }
-    #post_email {
+    #post_email, #post_age, #post_first_name, #post_last_name {
       font-weight: 500;
       border-radius: 0;
       text-align: center;
-      width: 240px;
+      width: 292px;
       background: transparent;
       border: none;
       border-bottom: 1px solid #000000;
-      margin: auto auto 167px auto;
       display: block;
       font-size: 14px;
-      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
       background-color: transparent;
+    }
+    #post_email {
+      margin: 30px auto 5px auto;
+    }
+    #post_age {
+      margin: 30px auto 5px auto;
+    }
+    #post_first_name {
+      margin: 30px auto 5px auto;
+    }
+    #post_last_name {
+      margin: 30px auto 5px auto;
     }
     #form-submit {
       font-weight: 500;
       -webkit-appearance: none;
-      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-      font-size: 14px;
+      font-family: "BreiteGrotesk-Regular", sans-serif;
+      font-size: 12px;
       background-color: white;
       text-transform: uppercase;
       border: 0 none;
       cursor: pointer;
       -webkit-border-radius: 5px;
       display: block;
-      margin: auto;
+      margin: 78px auto auto auto;
     }
     #input-feedback {
       font-weight: 500;
@@ -384,6 +398,18 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    p.label {
+      font-size: 8px;
+      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+      color: black;
+    }
+    .disclaimer p {
+      font-size: 8px;
+      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+      color: black;
+      width: 292px;
+      bottom: 15px;
     }
   }
 }

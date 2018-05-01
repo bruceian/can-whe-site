@@ -30,14 +30,30 @@
     </svg>
   </div>
 
-  <h6 id="input-msg">Please Enter<br /> Your Email Address</h6>
+  <h6 id="input-msg">Please Enter Your Information</h6>
   <h6 id="input-feedback"></h6>
 
   <form id="input-form" action="" method="POST" target="no-target">
-    <input type="email" id="post_email" name="post_email">
+    <input class="required" type="text" id="post_first_name" name="post_first_name">
+    <p class="label">First Name</p>
+    <input class="required" type="text" id="post_last_name" name="post_last_name">
+    <p class="label">Last Name</p>
+    <input class="required" type="number" id="post_age" name="age" max="120">
+    <p class="label">Age</p>
+    <input class="required" id="post_email" name="post_email">
+    <p class="label">Email Address</p>
     <input id="form-submit" type="submit">
   </form>
-  
+
+  <div class="disclaimer">
+    <p>
+      Back Forty Cannabis would like to keep you up to date with what we’re doing.
+      By entering your information, you will recieve electronic communications, including
+      without limitation to newsletters, reports, press releases, and invitations to or notices of events, from us. You can withdraw your consent at any time by contacting us at:
+      777 Richmond Street West #002, Toronto, Ontario M6J 0C2, info@b40cannabis.com
+    </p>
+  </div>
+
 </div>
 
 <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
