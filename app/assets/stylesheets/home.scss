@@ -350,8 +350,7 @@ body {
     h6 {
       margin: auto auto 100px auto;
       font-family: "BreiteGrotesk-Regular", sans-serif;
-      font-size: 12px;
-      font-weight: 200;
+      font-size: 14px;
       display: block;
       color: #010101;
       text-align: center;
@@ -381,10 +380,9 @@ body {
       margin: 30px auto 5px auto;
     }
     #form-submit {
-      font-weight: 500;
       -webkit-appearance: none;
       font-family: "BreiteGrotesk-Regular", sans-serif;
-      font-size: 12px;
+      font-size: 14px;
       background-color: white;
       text-transform: uppercase;
       border: 0 none;
@@ -411,6 +409,12 @@ body {
       color: black;
       width: 292px;
       bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    div.pop-up {
+      max-width: 32%;
+      max-height: 56%;
     }
   }
 }
