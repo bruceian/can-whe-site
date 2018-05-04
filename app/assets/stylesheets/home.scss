@@ -383,13 +383,14 @@ body {
       -webkit-appearance: none;
       font-family: "BreiteGrotesk-Regular", sans-serif;
       font-size: 14px;
+      font-weight: bold;
       background-color: white;
       text-transform: uppercase;
       border: 0 none;
       cursor: pointer;
       -webkit-border-radius: 5px;
       display: block;
-      margin: 68px auto auto auto;
+      margin: 60px auto auto auto;
     }
     #input-feedback {
       font-weight: 500;
@@ -400,7 +401,7 @@ body {
     }
     p.label {
       font-size: 8px;
-      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-family: "BreiteGrotesk-Regular", sans-serif;
       color: black;
     }
     .disclaimer p {
